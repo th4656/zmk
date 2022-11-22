@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_SNAP_LEFT
-
-config ZMK_KEYBOARD_NAME
-	default "SNAP"
+if SHIELD_SNAP_DONGLE
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
+config ZMK_KEYBOARD_NAME
+	default "SNAP"
+
 endif
 
-if SHIELD_SNAP_LEFT || SHIELD_SNAP_RIGHT
+if SHIELD_SNAP_LEFT || SHIELD_SNAP_RIGHT || SHIELD_SNAP_DONGLE
 
 config ZMK_SPLIT
 	default y
