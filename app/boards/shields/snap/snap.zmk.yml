@@ -13,3 +13,4 @@ features:
 siblings:
   - snap_left
   - snap_right
+  - snap_dongle

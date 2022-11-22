@@ -1,1 +1,14 @@
 #include "snap.dtsi"
+
+&default_transform {
+     col-offset = <56>;
+};
+
+&kscan_demux {
+    input-gpios
+		= <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        ;
+	output-gpios
+		= <&pro_micro 18 GPIO_ACTIVE_HIGH>
+        ;
+};
